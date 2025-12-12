@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Function Demo</title>
+    <script src="funkcijas.js"></script>
+</head>
+<body>
+
+<h2>Kvadrāta funkcija</h2>
+<input type="number" id="kv" placeholder="Ievadi skaitli">
+<button onclick="document.getElementById('kvOut').textContent = kvadrata(document.getElementById('kv').value)">Aprēķināt</button>
+<p>Rezultāts: <span id="kvOut"></span></p>
+
+
+<h2>Pi funkcija</h2>
+<button onclick="document.getElementById('out').textContent = pi(5)">Rādīt PI</button>
+<p>PI: <span id="out"></span></p>
+
+
+<h2>Vidējais</h2>
+<input type="number" id="v1" placeholder="x">
+<input type="number" id="v2" placeholder="y">
+<button onclick="document.getElementById('vOut').textContent = videjais(Number(v1.value), Number(v2.value))">Aprēķināt</button>
+<p>Rezultāts: <span id="vOut"></span></p>
+
+
+<h2>Lielākais</h2>
+<input type="number" id="l1" placeholder="x">
+<input type="number" id="l2" placeholder="y">
+<button onclick="document.getElementById('lOut').textContent = lielakais(Number(l1.value), Number(l2.value))">Aprēķināt</button>
+<p>Rezultāts: <span id="lOut"></span></p>
+
+
+
+</body>
+</html>
