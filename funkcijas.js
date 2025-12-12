@@ -6,4 +6,13 @@ function pi(d) {
 function showPi() {
   const v = Number(document.getElementById('n').value);
   document.getElementById('out').textContent = pi(v);
+function videjais(x, y) {
+    return (x + y) / 2;
+}
+function lielakais(x, y) {
+    if (x > y) {
+        return x;
+    } else {
+        return y;
+    }
 }
