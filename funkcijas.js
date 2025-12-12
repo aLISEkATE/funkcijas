@@ -1,3 +1,11 @@
+function kvadrata(x) {
+  x = Number(x);
+  if (Number.isNaN(x)) return NaN;
+  return x * x;
+}
+
+// expose to console
+window.kvadrata = kvadrata;
 function pi(d) {
   d = Number.isInteger(d) && d >= 0 ? d : 5;
   return Number(Math.PI.toFixed(d));
